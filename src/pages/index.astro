@@ -1,0 +1,75 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Code from "../icons/Code.astro";
+import Html from "../icons/Html.astro";
+import Css from "../icons/Css.astro";
+import JavaScript from "../icons/JavaScript.astro";
+import Github from "../icons/Github.astro";
+---
+
+<Layout title="Proyectos">
+  <main class="pt-4 min-h-screen flex gap-y-10 flex-col px-8 relative">
+    <!-- NAVBAR -->
+    <nav
+      class="text-4xl font-bold text-[#ced0d1] relative left-0 right-0 md:mr-4 md:justify-between mx-auto w-full flex justify-center items-center gap-1 hover:cursor-pointer"
+    >
+      <span class="flex flex-row items-center">
+        <Code width={48} color="#e6d02e" />JuliCode07
+      </span>
+      <a
+        target="_blank"
+        href="https://github.com/JuliCode07"
+        class="inline-flex items-center justify-center px-1 py-1 text-xs font-semibold text-center text-black bg-[#f1f1f1] transition border-2 border-[#111111] rounded-lg md:px-4 md:py-2 hover:bg-[#cacaca] md:text-sm gap-2 ease-in-out duration-300"
+        ><Github />GitHub
+        <svg
+          class="w-6 h-6 text-black"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 12H5m14 0-4 4m4-4-4-4"></path>
+        </svg>
+      </a>
+    </nav>
+
+    <!-- HOMEPAGE -->
+    <div class="text-center flex flex-col mx-auto gap-y-24 max-w-[980px]">
+      <h1 class="text-[108px] font-bold text-[#ced0d1] animate-fade-in-up">
+        Proyectos
+      </h1>
+      <article class="flex items-center gap-8 justify-center mb-10">
+        <div class="flex flex-col gap-6">
+          <p class="text-xl text-start text-gray-300 tracking-wide leading-8">
+            ¡Hola, soy <span class="bg-[#e6d02e] text-black px-1"
+              >JuliCode07</span
+            >¡Mi objetivo es enriquecer mis conocimientos, perfeccionar mis <span
+              class="bg-[#e6d02e] text-black px-1">habilidades</span
+            >, explorar nuevas tecnologías y poner en práctica todo lo aprendido
+            en <span class="bg-[#e6d02e] text-black px-1">proyectos</span>.
+          </p>
+          <div class="flex items-start"></div>
+        </div>
+        <div class="flex justify-center items-center">
+          <span class="-rotate-12 pr-10 drop-shadow-[5px_5px_15px_#e34f269d]"
+            ><Html width={160} /></span
+          >
+          <span class="absolute z-50 shadow-2xl shadow-[#f7de1e9d]"
+            ><JavaScript width={220} /></span
+          >
+          <span class="rotate-12 pl-10 drop-shadow-[5px_5px_15px_#0c73b89d]"
+            ><Css width={160} /></span
+          >
+        </div>
+      </article>
+    </div>
+
+  </main>
+</Layout>
